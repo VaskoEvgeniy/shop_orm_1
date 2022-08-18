@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Default Title{% endblock %}</title>
+</head>
+<body>
+<h2 style="color: blue">Слава Україні! Підтримай ЗСУ!</h2>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAACVBMVEUAm///zQB/tICkQksAAAAAbklEQVR4nO3PAQ0AIAzAsIN/0bggy9M66AwAAAAAAAAAAAAAAADw0V1izhIiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1ayIPTrs1IcVviyIAAAAASUVORK5CYII=">
+<nav>
+    <ul>
+
+        <li><a href="/homepage/{{ username }}">Главная страница</a></li>
+        <li><a href="/profile/{{ username }}">Профиль пользователя</a></li>
+    </ul>
+</nav>
+<div class="conteiner">
+    {% block container %}{% endblock %}
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Profile user{{ username }}{% endblock %}
+{% block container %}
+<h1>Profile user: {{ username }}</h1>
+<div>
+    <ul>
+        {% for item in item_name %}
+            <li>Название магазина: {{item}}</li>
+            <li>Стоимость: {{ cost_item }}</li>
+            <li>Видеокарта 1660</li>
+            <img src="https://content.rozetka.com.ua/goods/images/big/117478492.jpg">
+            {% include '_button.html' %}
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
